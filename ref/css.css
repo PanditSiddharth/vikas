@@ -93,6 +93,8 @@ li a {
 
     .btn {
         font-size: 10px;
+        
+        color: black;
     }
 
     .search input {
