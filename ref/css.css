@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+:root {}
+
+header {
+    display: flex;
+    position: sticky;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+ 
+}
+
+.leftnav {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.rightnav {
+    display: flex;
+    width: 50%;
+}
+
+.lists ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 2px 4px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.img {
+    margin: 1px 6px;
+}
+
+.img img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.rightnav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3em;
+}
+
+.search {
+    align-items: right;
+    justify-content: right;
+}
+
+.search input {
+    width: 100px;
+}
+
+.rightnav button {}
+
+.bg{
+    background: rgba(0, 0, 0, 0.7) url('bird-g9e6f1e069_1280.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+@media (max-width: 720px) {
+
+    .nav {
+        /* flex-direction: column; */
+    }
+
+    .leftnav {
+        width: 75%;
+    }
+
+    .rightnav {
+        width: 25%;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .search input {
+        width: 70px;
+        font-size: 10px;
+    }
+
+    li {
+        padding: 2px 4px;
+    }
+
+    li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 16px;
+    }
+
+    .img {
+        margin: 1px 4px;
+    }
+
+    .img img {
+        width: 30px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 0px) and (max-width:479px) {
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .leftnav {
+        width: 100%;
+        align-items: flex-start;
+    
+    }
+
+    .rightnav {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .search input {
+        width: 70px;
+        font-size: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        padding: 0px;
+        flex-direction: column; 
+
+    }
+
+
+    li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 16px;
+    }
+
+    .img {
+        margin: 1px 4px;
+        width: 70%;
+        display: flex;
+        align-items:flex-start;
+
+    }
+
+    .img img {
+        width: 30px;
+        border-radius: 20px;
+    }
+
+    .lists{
+ 
+         width: 30%;
+         padding: 0px;
+
+    }
+
+    .lists ul{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        right: 3px;
+
+    }
+    
+}
